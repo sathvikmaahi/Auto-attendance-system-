@@ -9,10 +9,10 @@ print(pytesseract.image_to_string(img)) #to get image_to_srting() press control 
 cv2.imshow('Result',img)
 cv2.waitKey(0)
 
-#file = open("attendance.csv","a") # Open the text file in append mode 
-#text = pytesseract.image_to_string("3.JPG")   # Applying tesseract OCR on the cropped image 
-#file.write(text)    # Appending the text into file 
-#file.write("\n")    # Appending the text into file 
-#file.close          # Close the file 
+file = open("attendance.csv","a") # Open the text file in append mode 
+text = pytesseract.image_to_string("3.JPG")   # Applying tesseract OCR on the cropped image 
+file.write(text)    # Appending the text into file 
+file.write("\n")    # Appending the text into file 
+file.close          # Close the file 
 
 
